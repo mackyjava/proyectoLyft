@@ -40,3 +40,17 @@ function reproducirVideo1(){
   var imagenReproducir =  video1.nextElementSibling;
   imagenReproducir.style.display = "none";
 }
+
+
+//Esta función es la del vídeo de la seccion de Monse//
+var video3=document.getElementById('tercerVideo');
+video3.addEventListener("click", reproducirvideo3);
+
+function reproducirvideo3(){
+  var imagenvideo3 = document.getElementById("imagensenor");
+  imagenvideo3.style.display= "none";
+  var video3= document.getElementById("video3");
+  video3.style.display="inline-block"
+  video3.src+="?autoplay=1";
+}
+//Aquí termina la funcion de Monse//
