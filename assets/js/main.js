@@ -26,3 +26,17 @@ function textoInputs(){
   this.classList.add('textoInput');
   this.previousElementSibling.classList.add('active');
 };
+
+// REPRODUCE PRIMER VIDEO
+
+var imagenVideo1= document.getElementById("imagenVideo1");
+imagenVideo1.addEventListener("click", reproducirVideo1);
+
+function reproducirVideo1(){
+  this.style.display = "none";
+  var video1 = this.nextElementSibling;
+  video1.style.display = "inline-block";
+  video1.src += "?autoplay=1";
+  var imagenReproducir =  video1.nextElementSibling;
+  imagenReproducir.style.display = "none";
+}
